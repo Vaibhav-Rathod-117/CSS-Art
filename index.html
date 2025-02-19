@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="heart.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="envelope" onclick="showMessage()">
+        <div class="letter">💌</div>
+    </div>
+    <div class="message-container">
+        <div class="message">You are my Medusa! ❤️</div>
+        <div class="image-container">
+            <img src="assets/my love.jpg" 
+                 alt="Loved One" 
+                 class="person-image">
+        </div>               
+        <div class="question">
+            <p>Do you love me? 💖</p>
+            <button onclick="showResponse('yes')">Yes</button>
+            <button onclick="showResponse('no')">No</button>
+        </div>
+        <div class="response"></div>
+    </div>
+    <div class="heart-container"></div>
+    <script src="script.js"></script>
+
+</body>
+</html>
